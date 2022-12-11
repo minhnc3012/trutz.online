@@ -1,0 +1,19 @@
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          testclient:
+            client-id: testclient
+            client-secret: QLDlnx18Z7Yw9yezfRVY4gTkDXgwG2P2
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/testclient
+        provider:
+          testclient:
+            issuer-uri: http://localhost/realms/testrealm
+            authorization-uri: http://localhost/realms/testrealm/protocol/openid-connect/auth
+            token-uri: http://localhost/realms/testrealm/protocol/openid-connect/token
+            user-info-uri: http://localhost/realms/testrealm/protocol/openid-connect/userinfo
+            
+              
